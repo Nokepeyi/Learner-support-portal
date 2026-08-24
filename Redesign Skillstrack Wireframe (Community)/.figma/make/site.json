@@ -1,0 +1,10 @@
+{
+  "description": "Streamline skill tracking and task management for learners and assessors with a user-friendly, blue-themed interface designed for clarity and efficiency.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
