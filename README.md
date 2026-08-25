@@ -36,7 +36,7 @@ by Firebase.
 
 ## Technologies
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-- **Framework/Library:** _[state your Assessor-approved framework/library here, e.g. React / Vue / vanilla JS + a game library such as Phaser.js or Kaboom.js]_
+- **Framework:** _[state your Assessor-approved framework/library here, e.g. React / Vue / vanilla JS + a game library such as Phaser.js or Kaboom.js]_
 - **Database:** Firebase Realtime Database
 - **Authentication:** Firebase Authentication
 - **API communication:** Firebase Realtime Database REST API (GET, POST, PUT/PATCH, DELETE)
@@ -52,9 +52,9 @@ by Firebase.
 ## Team Members and Responsibilities
 | Name | Role / Primary Responsibilities |
 |---|---|
-| _[lIHLE]_ | 
-| _[tEMOSHO]_ | 
-| _[LESEDI]_ | 
+| _[lIHLE]_ | Flowcharts,Pseudocode,README and User story
+| _[tEMOSHO]_ | Requirments, Pseudocode and Firebase
+| _[LESEDI]_ | Wireframe,Pseudocode and Tracetable
 
 ## Repository Structure
 ```
@@ -103,21 +103,21 @@ Learner-Support-Portal/
 
 ## Setup Instructions
 1. Clone the repository:
-   ```
+
    git clone <repository-url>
-   ```
+   
 2. Install dependencies (if using a package manager):
-   ```
+
    npm install
-   ```
+  
 3. Create a Firebase project and add your Firebase config to a local, git-ignored config file
    (e.g. `src/firebase-config.js`, listed in `.gitignore`).
 4. _[Add any framework-specific setup steps here.]_
 
 
 ## Project Milestones
-| Milestone | Target Date | Status |
-|---|---|---|
+| Milestone | Status |
+|---|---|
 | Repository & Project Board set up | | |
 | Month 1 submission (planning, environment, core JS) | | |
 | Firebase Authentication & data model live | | |
