@@ -53,7 +53,7 @@ by Firebase.
 | Name | Role / Primary Responsibilities |
 |---|---|
 | _[lIHLE]_ | Flowcharts,Pseudocode,README and User story
-| _[tEMOSHO]_ | Requirments, Pseudocode and Firebase
+| _[TEMOSHO]_ | Requirments, Pseudocode and Firebase
 | _[LESEDI]_ | Wireframe,Pseudocode and Tracetable
 
 ## Repository Structure

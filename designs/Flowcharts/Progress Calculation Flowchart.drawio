@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="DkPH9342RTS1RFXgntXM">
+    <mxGraphModel dx="1094" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" value="Start" vertex="1">
+          <mxGeometry height="100" width="100" x="150" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-2" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="260" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Retrieve all task from Firebase" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-4" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="100" width="70" x="390" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Count total task" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-6" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="100" width="70" x="395" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Count completed task" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-8" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="100" width="70" x="395" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Calculate progress" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-10" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="100" width="70" x="390" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-12" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Display progress summary in Dashboard" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-13" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="490" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="Em_J-th48N1YZ0AkNZlq-14" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" value="End" vertex="1">
+          <mxGeometry height="100" width="100" x="600" y="760" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
