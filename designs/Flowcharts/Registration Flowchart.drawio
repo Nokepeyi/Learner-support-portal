@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="nvvyvpBrR9WI31e1b2Kb">
+    <mxGraphModel dx="860" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AptJet-YYg0gQnhOmUfz-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Start&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="370" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-2" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="395" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Enter Display Name, Surname,&lt;/div&gt;&lt;div&gt;Email and Password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="144" x="358" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-4" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="387.5" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Click Register" vertex="1">
+          <mxGeometry height="60" width="120" x="362.5" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-6" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="387.5" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Are all filelds filled?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="75" x="385" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-8" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="No" vertex="1">
+          <mxGeometry height="60" width="70" x="465" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-9" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;legacyAnchorPoints=0;" value="Yes" vertex="1">
+          <mxGeometry height="70" width="70" x="310" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Show error &quot;Please fill all the fields&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-11" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;br&gt;Is email valid and password strong?&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="108" x="197" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-13" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="Yes" vertex="1">
+          <mxGeometry height="70" width="70" x="216" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-16" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;legacyAnchorPoints=0;" value="No" vertex="1">
+          <mxGeometry height="70" width="70" x="120" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Show error&lt;div&gt;&quot;invalid format&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="108" x="5" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Create account in Database" vertex="1">
+          <mxGeometry height="60" width="120" x="197" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-19" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" value="" vertex="1">
+          <mxGeometry height="60" width="70" x="216" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Show success message and direct to Login page" vertex="1">
+          <mxGeometry height="60" width="120" x="197" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-21" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="60" x="327.5" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="AptJet-YYg0gQnhOmUfz-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;End&amp;nbsp;&lt;/div&gt;&lt;div&gt;Registration complete&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="890" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
