@@ -7,7 +7,7 @@ A Javascript-based learner support portal for Skills Track Training Centre ,feat
 The Learner Support Portal is a browser-based application built for SkillsTrack Training Centre.
 It gives learners a single place to manage learning tasks, book support sessions, track their
 progress, access learning resources and play a short coding mini-game. The system is built with
-JavaScript, uses Firebase (Realtime Database and Authentication) for data storage and user
+JavaScript, uses Firebase (Firebase Database and Authentication) for data storage and user
 accounts, and communicates with Firebase through its REST API.
 
 This repository is the single source of truth for the project: all planning documents, designs,
@@ -36,25 +36,31 @@ by Firebase.
 
 ## Technologies
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-- **Framework:** _[state your Assessor-approved framework/library here, e.g. React / Vue / vanilla JS + a game library such as Phaser.js or Kaboom.js]_
-- **Database:** Firebase Realtime Database
+- **Framework:** Vanilla JavaScript (ES6+)
+- **Database:** Cloud Firebase (Firebase)
 - **Authentication:** Firebase Authentication
-- **API communication:** Firebase Realtime Database REST API (GET, POST, PUT/PATCH, DELETE)
+- **API communication:** Firebase REST API (GET, POST, PUT/PATCH, DELETE)
 - **Version control:** Git & GitHub (branches, pull requests, code review, CI)
 
+  ## Firebase Firestore - Live Database
+-**Project ID:** learner-support-portal-427a9
+-**Live Console Link (Lecturer Access Granted):**
+-https://console.firebase.google.com/project/learner-support-portal-427a9/firestore/databases/-default-/data
+-**Collections (7):** assignments, attendance, courses, notifications, resources, supportSessions, users
+
 ## Development Tools
-- Visual Studio Code (or _[assessor-approved IDE]_) with formatter, linter and debugger configured
+- Visual Studio Code with formatter, linter and debugger configured
 - Git / GitHub Desktop or CLI
 - Browser Developer Tools (console, breakpoints, network tab)
 - GitHub Actions for a basic CI check (e.g. linting)
-- _[Figma / Canva / Miro — whichever you use for wireframes]_
+- _[Figma]_
 
 ## Team Members and Responsibilities
 | Name | Role / Primary Responsibilities |
 |---|---|
-| _[lIHLE]_ | Flowcharts,Pseudocode,README and User story
-| _[TEMOSHO]_ | Requirments, Pseudocode and Firebase
-| _[LESEDI]_ | Wireframe,Pseudocode and Tracetable
+| _[lIHLE]_ | Flowcharts,Pseudocode,README,firebase and User story
+| _[TEMOSHO]_ | Requirments, Pseudocode and Flowcharts
+| _[LESEDI]_ | Wireframe,Pseudocode,Flowcharts and Tracetable
 
 ## Repository Structure
 ```
@@ -104,7 +110,7 @@ Learner-Support-Portal/
 ## Setup Instructions
 1. Clone the repository:
 
-   git clone <repository-url>
+   git clone <https://github.com/Nokepeyi/Learner-support-portal.git>
    
 2. Install dependencies (if using a package manager):
 
@@ -112,7 +118,7 @@ Learner-Support-Portal/
   
 3. Create a Firebase project and add your Firebase config to a local, git-ignored config file
    (e.g. `src/firebase-config.js`, listed in `.gitignore`).
-4. _[Add any framework-specific setup steps here.]_
+4. _[Open index.htmlwith Live server or double-click to run.]_
 
 
 ## Project Milestones
@@ -130,8 +136,8 @@ See [CHANGELOG.md](./CHANGELOG.md) for a full history of changes.
 
 ## Links
 - Documentation: `docs/`
-- Design files (Figma/Canva/Miro): _[link]_
-- GitHub Project Board: _[link]_
+- Design files: See /docs folder for wireframes
+- GitHub Project Board: _[https://github.com/Nokepeyi/Learner-support-portal.git]_
 
 ## References
 - QCTO JavaScript Programmer Skills Programme Document (SP-220373)
