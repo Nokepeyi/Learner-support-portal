@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learner Support Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <h2>SkillsTrack Portal</h2>
+  <button id="logoutBtn">Logout</button>
+  <button onclick="window.print()">Print Progress</button>
+</nav>
+
+<main>
+  <section id="auth-section">
+    <h3>Login / Register</h3>
+    <input id="email" placeholder="email">
+    <input id="password" type="password" placeholder="password">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+  </section>
+
+  <section id="dashboard">
+    <h3>Dashboard</h3>
+    <p>Total: <span id="totalTasks">0</span> | Completed: <span id="completedTasks">0</span> | Outstanding: <span id="outstanding">0</span></p>
+    <p>Progress: <span id="progress">0</span>%</p>
+    <input id="searchInput" placeholder="Search tasks...">
+    <div id="taskList"></div>
+  </section>
+
+  <section id="task-section">
+    <h3>Task Manager (CRUD)</h3>
+    <input id="taskTitle" placeholder="Task title">
+    <input id="taskDueDate" type="date">
+    <button id="addTaskBtn">Add Task</button>
+  </section>
+
+</main>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
