@@ -1,0 +1,4 @@
+body{font-family: Arial; margin:0; padding:20px}
+nav{display:flex; justify-content:space-between; background:#222; color:#fff; padding:10px; transition: opacity 0.5s;}
+.task-item{border:1px solid #ccc; padding:8px; margin:5px 0; display:flex; justify-content:space-between;}
+@media print { nav, #auth-section { display:none; } }
