@@ -13,7 +13,7 @@
 - UI Wireframe: Login, Dashboard, Tasks, Support, Resources pages.
 
 ## 3. Coding
-- Tools: VS Code + Prettier + ESLint, GitHub, Firebase Firestore, Vanilla JS ES6+
+- Tools: VS Code, Firebase Firestore, Vanilla JS ES6+
 - Standards: use strict, let/const, arrow functions, modular files
 - Features: Auth state, dashboard calc, CRUD via Firestore REST API (GET, POST, PATCH, DELETE), map/filter/reduce for search, createElement for dynamic tasks.
 

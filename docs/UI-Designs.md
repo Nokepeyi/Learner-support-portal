@@ -1,8 +1,7 @@
 # UI Designs: SkillsTrack Learner Support Portal
 
 ## Design source
-- Figma wireframe: see `Figma-link.md`
-- Wireframes PDF: `docs/wireframes.pdf`
+- Figma wireframe: see `https://www.figma.com/board/LlG9Ie9puTpSmJb5ZHHHKO/WIRE-FRAME?t=d2C0IERO6tAOd2GF-1'
 
 ## Screens
 | Screen | Purpose | Key elements |
