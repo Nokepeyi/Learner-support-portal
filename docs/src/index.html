@@ -1,45 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Learner Support Portal</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillsTrack Learner Support Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <h2>SkillsTrack Portal</h2>
-  <button id="logoutBtn">Logout</button>
-  <button onclick="window.print()">Print Progress</button>
-</nav>
 
-<main>
-  <section id="auth-section">
-    <h3>Login / Register</h3>
-    <input id="email" placeholder="email">
-    <input id="password" type="password" placeholder="password">
-    <button id="loginBtn">Login</button>
-    <button id="registerBtn">Register</button>
+  <section id="auth-section" class="auth-page">
+    <form id="authForm" class="auth-card">
+      <h1>SkillsTrack</h1>
+      <p>Your learning journey starts here.</p>
+
+      <label for="email">Email address</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" minlength="6" required>
+
+      <label for="displayName">Full name (for registration)</label>
+      <input type="text" id="displayName" placeholder="Your name">
+
+      <button type="submit" id="loginBtn">Sign in</button>
+      <button type="button" id="registerBtn" class="secondary">
+        Create learner account
+      </button>
+
+      <p id="authMessage" role="status"></p>
+    </form>
   </section>
 
-  <section id="dashboard">
-    <h3>Dashboard</h3>
-    <p>Total: <span id="totalTasks">0</span> | Completed: <span id="completedTasks">0</span> | Outstanding: <span id="outstanding">0</span></p>
-    <p>Progress: <span id="progress">0</span>%</p>
-    <input id="searchInput" placeholder="Search tasks...">
-    <div id="taskList"></div>
-  </section>
+  <div id="portal" class="portal" hidden>
+    <aside class="sidebar">
+      <h2>SkillsTrack</h2>
+      <p id="userWelcome"></p>
 
-  <section id="task-section">
-    <h3>Task Manager (CRUD)</h3>
-    <input id="taskTitle" placeholder="Task title">
-    <input id="taskDueDate" type="date">
-    <button id="addTaskBtn">Add Task</button>
-  </section>
+      <nav id="navigation">
+        <button data-view="dashboard">Dashboard</button>
+        <button data-view="tasks" id="tasksNav">My Tasks</button>
+        <button data-view="support" id="supportNav">Support Sessions</button>
+        <button data-view="game" id="gameNav">Coding Game</button>
+        <button data-view="assessor" id="assessorNav" hidden>
+          Assessor Workspace
+        </button>
+      </nav>
 
-</main>
+      <button id="logoutBtn" class="logout">Sign out</button>
+    </aside>
 
-<script type="module" src="firebase.js"></script>
-<script type="module" src="app.js"></script>
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Dashboard</h1>
+          <p id="roleLabel"></p>
+        </div>
+        <button id="printBtn" class="secondary">Print Progress</button>
+      </header>
+
+      <p id="appMessage" role="status"></p>
+
+      <!-- LEARNER DASHBOARD -->
+      <section id="learner-dashboard" class="view">
+        <div class="cards">
+          <article class="stat-card">
+            <p>Total tasks</p>
+            <h2 id="totalTasks">0</h2>
+          </article>
+          <article class="stat-card">
+            <p>Completed tasks</p>
+            <h2 id="completedTasks">0</h2>
+          </article>
+          <article class="stat-card">
+            <p>Outstanding tasks</p>
+            <h2 id="outstandingTasks">0</h2>
+          </article>
+          <article class="stat-card">
+            <p>Progress</p>
+            <h2 id="progressPercent">0%</h2>
+          </article>
+        </div>
+
+        <article class="panel">
+          <h2>Welcome to your learning space</h2>
+          <p>Track assignments, manage your learning activities and request support.</p>
+          <div class="progress-track">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ASSESSOR DASHBOARD -->
+      <section id="assessor-dashboard" class="view" hidden>
+        <div class="cards">
+          <article class="stat-card">
+            <p>Total support bookings</p>
+            <h2 id="totalBookings">0</h2>
+          </article>
+          <article class="stat-card">
+            <p>Pending bookings</p>
+            <h2 id="pendingBookings">0</h2>
+          </article>
+          <article class="stat-card">
+            <p>Confirmed bookings</p>
+            <h2 id="confirmedBookings">0</h2>
+          </article>
+          <article class="stat-card">
+            <p>Completed bookings</p>
+            <h2 id="completedBookings">0</h2>
+          </article>
+        </div>
+
+        <article class="panel">
+          <h2>Assessor workspace</h2>
+          <p>Review learner support requests and update their booking statuses.</p>
+          <button id="viewBookingsBtn">View all bookings</button>
+        </article>
+
+        <article class="panel">
+          <h2>Learner support bookings</h2>
+          <div id="assessorBookings"></div>
+        </article>
+      </section>
+
+      <!-- LEARNER TASKS -->
+      <section id="tasks-view" class="view" hidden>
+        <article class="panel">
+          <h2>Create a task</h2>
+          <form id="taskForm">
+            <label for="taskTitle">Task title</label>
+            <input id="taskTitle" required maxlength="120">
+
+            <label for="taskDueDate">Due date</label>
+            <input type="date" id="taskDueDate">
+
+            <button type="submit">Add task</button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2>My learning tasks</h2>
+          <input id="taskSearch" placeholder="Search tasks...">
+          <div id="taskList"></div>
+        </article>
+      </section>
+
+      <!-- LEARNER SUPPORT BOOKINGS -->
+      <section id="support-view" class="view" hidden>
+        <article class="panel">
+          <h2>Book a support session</h2>
+          <form id="bookingForm">
+            <label for="supportTopic">What do you need help with?</label>
+            <input id="supportTopic" required maxlength="150">
+
+            <label for="supportDate">Preferred date</label>
+            <input type="date" id="supportDate" required>
+
+            <label for="supportNotes">Additional notes</label>
+            <textarea id="supportNotes" rows="3"></textarea>
+
+            <button type="submit">Submit booking</button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2>My support bookings</h2>
+          <div id="learnerBookings"></div>
+        </article>
+      </section>
+
+      <!-- LEARNER CODING GAME -->
+      <section id="game-view" class="view" hidden>
+        <article class="panel">
+          <h2>Test your coding knowledge</h2>
+          <p id="gameProgress"></p>
+          <div id="gameBox"></div>
+          <p id="gameResult"></p>
+          <button id="startGameBtn">Start game</button>
+        </article>
+      </section>
+
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
 </body>
 </html>

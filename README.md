@@ -137,3 +137,28 @@ See [CHANGELOG.md](./CHANGELOG.md) for a full history of changes.
 - QCTO JavaScript Programmer Skills Programme Document (SP-220373)
 - JavaScript Programmer Curriculum Document (Curriculum Code 900219-000-00-00)
 - 
+## Month 2 Reflection - Lihle Nokepeyi
+
+### What I Built
+Implemented Firebase Authentication and Firestore integration for SkillsTrack Learner Support Portal with role-based access control. Single login page routes users based on role field in Firestore.
+
+### Firestore Structure
+- Collection: `users` (lowercase)
+    - Document ID: Firebase Auth UID (not Auto-ID)
+    - Fields: email, role (learner/assessor), displayName, createdAt
+- Collections: `supportBookings`, `tasks`, `gameScores`
+
+### Challenges and Fixes
+1. **Duplicate Users collection:** Created `Users` (capital) with Auto-IDs by mistake. Deleted it and kept only `users` (lowercase) with UID as document ID. Learned collection names are case-sensitive.
+2. **Dashboard showing "Learner Test":** Welcome message pulls from `displayName` field. I was logged in with test account learner@test.com. Fixed by logging in with my real account lihlenokepeyi@gmail.com.
+3. **Missing Permissions Error:** "Missing or insufficient permissions" when loading bookings. Fixed by updating Firestore Rules to allow authenticated users.
+4. **Total tasks 0:** Tasks collection was empty after cleanup. Recreated by creating a task from Assessor dashboard, which auto-creates the collection.
+
+### Authentication Flow
+Single login entry point for both roles. After signInWithEmailAndPassword, app fetches users/{uid} and checks role to route to Learner or Assessor dashboard. This is RBAC (Role-Based Access Control).
+
+### What I Learned
+- UID as Document ID is critical for linking Auth and Firestore
+- Firestore is case-sensitive
+- One login page with role lookup is cleaner than two separate logins
+- Documentation and proper collection naming prevents future bugs
